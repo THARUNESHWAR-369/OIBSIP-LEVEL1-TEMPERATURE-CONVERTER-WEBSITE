@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Temperature Convert Web App</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Temperature Converter</h1>
-        <input type="number" id="temperatureInput" placeholder="Enter temperature">
-        <select id="unitSelect">
-            <option value="celsius">Celsius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-            <option value="kelvin">Kelvin</option>
-        </select>
-        <button onclick="convertTemperature()">Convert</button>
-        <div id="result"></div>
+        <div class="hr"></div>
+        <div class="content">
+            <div class="input-group">
+                <input type="number" id="temperatureInput" placeholder="Enter temperature">
+                <select id="unitSelect">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div class="result">
+                <button onclick="convertTemperature()">Convert</button>
+                <div id="result"></div>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js" type="text/javascript" ></script>
 </body>
+
 </html>
