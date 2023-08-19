@@ -23,9 +23,11 @@ function convertTemperature() {
     convertedUnit = "K";
   }
 
-  document.getElementById(
-    "result"
-  ).innerText = `Converted Temperature: ${convertedTemperature.toFixed(
-    2
-  )} ${convertedUnit}`;
+  document.getElementById("result").innerHTML = `
+  <p>
+        <strong>Converted Temperature</strong> 
+        <div class='converted-result'>
+          <span>${temperatureInput} °C = ${convertedTemperature.toFixed(2)} ${convertedUnit}</span>
+        </div>
+  </p>`;
 }
